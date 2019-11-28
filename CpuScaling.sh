@@ -2,7 +2,7 @@
 # /**************************************************************************
 #  *
 #  * init modify  : 2019年10月25日(金)
-#  * modify       : 2019年10月27日(日)
+#  * modify       : 2019年11月28日(木)
 #  * summary      : Raspi3B+ CentOS7 環境の CPU を最大パフォーマンス状態にする。
 #  *              : アーキテクチャ: armv7l
 #  *              : Model name:ARMv7 Processor rev 4 (v7l)
@@ -17,9 +17,9 @@ scriptDir=$(dirname $0)
 selfScriptName=CpuScaling.sh
 selfScriptDir=$scriptDir
 selfScriptExe=$selfScriptDir/$selfScriptName
-scaleCpul=
+scaleCpu=
 isDiffer=false
-cronStdOutLogPath=/root/script/CpuScaling.log
+cronStdOutLogPath=$scriptDir/CpuScaling.log
 lastChangeWriteLogName=LastChangeWrite.log
 lastChangeWriteLogPath=$selfScriptDir/$lastChangeWriteLogName
 
